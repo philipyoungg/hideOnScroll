@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hide On Scroll</title>
+  <script src='hideOnScroll.min.js'></script>
+  <style>
+    html {
+      font-family: sans-serif;
+      opacity: 0.8;
+    }
+    body {
+      width: 100%;
+      height: 2000px;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 0.25rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    .menu {
+      width: 100%;
+      background: whitesmoke;
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-bottom: 1px solid silver;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li>Home</li>
+      <li>Design</li>
+      <li>Marketing</li>
+    </ul>
+  </div>
+  <script>
+    hideOnScroll(document.querySelector('.menu'));
+  </script>
+</body>
+</html>
